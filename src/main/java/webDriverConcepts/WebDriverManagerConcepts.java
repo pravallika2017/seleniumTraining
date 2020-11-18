@@ -1,0 +1,18 @@
+package webDriverConcepts;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class WebDriverManagerConcepts {
+
+	public static void main(String[] args) {
+     WebDriverManager.chromedriver().setup();
+     WebDriver driver = new ChromeDriver(); //Launch Chrome Browser
+     driver.get("http://www.google.com");
+     System.out.println(driver.getTitle());
+
+	}
+
+}
